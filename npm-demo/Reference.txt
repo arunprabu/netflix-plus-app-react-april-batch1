@@ -1,0 +1,38 @@
+
+NPM Dependencies 
+---
+  1. Project Dependencies 
+      * the packages are needed for the app's functionality to work. 
+      
+      examples: dropzone, datatables.net 
+
+      npm i dropzone
+      npm i dropzone --save  
+
+      npm update dropzone
+      npm uninstall dropzone 
+
+      in package.json, you can find Project Dependencies here,
+      "dependencies": {
+        "dropzone": "^6.0.0-beta.2"
+      }
+
+  2. Development Dependencies
+      * some packages are needed for the app to be developed
+      * for better smoother dev workflow 
+      * needed during the time of development
+
+      examples: webpack, typescript, sass 
+
+      npm i webpack --save-dev 
+      npm i webpack -D 
+
+      npm update webpack -D
+      npm uninstall webpack -D 
+
+      in package.json, you can find Dev Dependencies here,
+      "devDependencies": {
+        "webpack": "^5.79.0"
+      }
+
+=====================

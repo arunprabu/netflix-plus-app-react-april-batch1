@@ -1,0 +1,49 @@
+PWA?
+---
+ Installable Webapp 
+ Installable in Chrome Family browsers (Chrome, Edge, Opera, Brave Browser) in computers
+ Installable only in Android 
+
+ example: angular.io 
+ 
+ 
+Thinking in React
+---
+ 0. Find out the number of components 
+ 1. Break UI into component hierarchy 
+
+Components
+--------- 
+  * Reusable block of code 
+  * made up of JS, JSX and CSS (optional)
+  
+  1. Functional Components  (should be created in src/components )
+      * coded with functions 
+      1.1 Functional Components with Named Function [DONE]
+      1.2 Functional Components with Anonymous Function [DONE]
+      1.3 Functional Components with Arrow Function
+
+  2. Class Components   (should be created in src/containers )
+      * coded as Object oriented class 
+
+JSX Limitations
+---
+  * it will look like HTML. But not HTML 
+  * you can use any html tag in JSX. But certain attributes would differ. 
+  * JSX elements must be closed. either self-closed, or separately closed 
+  * class attribute should become className
+
+  
+
+
+Project Structure
+----
+  src/
+    components/ 
+      Header/
+        Header.js 
+      Footer/
+        Footer.js 
+
+
+    containers/
