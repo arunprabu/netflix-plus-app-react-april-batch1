@@ -7,11 +7,17 @@
   * export
 */
 
+import MenuList from "../MenuList/MenuList";
+
 const Footer = function() {
+  const copyrightYear = 2023;
+  const developerName = 'Arun';
+
   return (
-    <footer>
+    <footer className="text-center">
       <hr />
-      <p>Copyright 2023</p>
+      <MenuList />
+      <p>Copyright {copyrightYear} | {developerName}</p>
     </footer>
   );
 }

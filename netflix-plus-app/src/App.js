@@ -4,6 +4,7 @@
 import './App.css'; // CSS for App component
 import Header from './components/Header/Header';
 import Footer from './components/Footer/Footer';
+import HomePage from './pages/HomePage/HomePage';
 
 // App is a component
 // Comp definition
@@ -13,10 +14,10 @@ function App() {
     <div>
       <Header></Header>
 
-      <main>
-        <h1>Success!</h1>
+      <main className="container mt-5 pt-2">
+        <HomePage/>
       </main>
-      
+
       <Footer />
     </div>
   );

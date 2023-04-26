@@ -1,5 +1,7 @@
 // Functional Component with Named Function 
 
+import MenuList from "../MenuList/MenuList";
+
 // imports (optional)
 // comp defn 
   // must return JSX 
@@ -25,23 +27,8 @@ function Header() {
             <span className="navbar-toggler-icon"></span>
           </button>
           <div className="collapse navbar-collapse" id="navbarCollapse">
-            <ul className="navbar-nav me-auto mb-2 mb-md-0">
-              <li className="nav-item">
-                <a className="nav-link active" aria-current="page" href="/">
-                  Home
-                </a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link" href="/">
-                  About Us
-                </a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link" href="/">
-                  Contact Us
-                </a>
-              </li>
-            </ul>
+            <MenuList />
+           
             <form className="d-flex" role="search">
               <input
                 className="form-control me-2"
