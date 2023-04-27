@@ -1,13 +1,15 @@
 // Fn comp with arrow fn
 
 import LatestVideo from "./LatestVideo/LatestVideo";
+import TrendingVideoList from "./TrendingVideoList/TrendingVideoList";
 
 // rafce
 const HomePage = () => {
   return (
     <div>
       <h1>Welcome to Home Page!</h1>
-      <div className="row">
+
+      <div className="row mb-3">
         <h2>Latest Videos | Props (Parent to Child Component Commn) Demo</h2>
         <div className="col-md-3">
           <LatestVideo
@@ -41,8 +43,15 @@ const HomePage = () => {
             Watch the highlights GT Vs MI IPL 2023.
           </LatestVideo>
         </div>
-
       </div>
+
+      <div className="mb-3">
+        <h2>
+          Trending Videos | Class Component, States and Events Demo
+        </h2>
+        <TrendingVideoList />
+      </div>
+
     </div>
   );
 };

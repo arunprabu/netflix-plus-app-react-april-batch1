@@ -38,7 +38,7 @@ Data Binding
   * keep the data in a variable inside a component and display it in JSX of the comp 
 
   1. One Way Binding [DONE]
-      * JSX can merely display the data of the varaible. 
+      * JSX can merely display the data of the variable. 
 
   2. Two Way Binding
       * keep the data in a variable and display it in JSX 
@@ -78,6 +78,16 @@ Project Structure
     containers/
     pages/    (or features/)
       HomePage/
-        HomePage.js  
+        LatestVideo/
+          LatestVideo.js 
+        HomePage.js
       
 
+3 Ways to integrate bootstrap 
+--
+  1. original bootstrap 
+      https://create-react-app.dev/docs/adding-bootstrap/
+  2. react-bootstrap
+      npm i react-bootstrap
+  3. reactstrap 
+      npm i reactstrap 

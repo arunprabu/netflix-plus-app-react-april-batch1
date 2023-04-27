@@ -3,7 +3,7 @@ const LatestVideo = ( props ) => {
   console.log(props);
   // props are object
   // props are read-only
-  
+
   return (
     <div className="card">
       <img src={props.thumbnailUrl} className="card-img-top" alt="..." />
