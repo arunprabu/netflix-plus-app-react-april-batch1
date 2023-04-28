@@ -17,13 +17,13 @@ Components
   * Reusable block of code 
   * made up of JS, JSX and CSS (optional)
   
-  1. Functional Components  (should be created in src/components )
+  1. Functional Components  (shared comps should be created in src/components )
       * coded with functions 
       1.1 Functional Components with Named Function [DONE]
       1.2 Functional Components with Anonymous Function [DONE]
       1.3 Functional Components with Arrow Function [DONE] [RECOMMENDED]
 
-  2. Class Components   (should be created in src/containers )
+  2. Class Components   (shared should be created in src/containers )
       * coded as Object oriented class 
 
 JSX Limitations

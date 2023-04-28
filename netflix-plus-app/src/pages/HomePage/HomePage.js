@@ -1,6 +1,7 @@
 // Fn comp with arrow fn
 
 import LatestVideo from "./LatestVideo/LatestVideo";
+import RecommendedVideoList from "./RecommendedVideoList/RecommendedVideoList";
 import TrendingVideoList from "./TrendingVideoList/TrendingVideoList";
 
 // rafce
@@ -46,12 +47,14 @@ const HomePage = () => {
       </div>
 
       <div className="mb-3">
-        <h2>
-          Trending Videos | Class Component, States and Events Demo
-        </h2>
+        <h2>Trending Videos | Class Component, States and Events Demo</h2>
         <TrendingVideoList />
       </div>
 
+      <div className="mb-3">
+        <h2>Recommended Videos | Class Comp, States, Events, Lists & Keys and Conditionals Demo</h2>
+        <RecommendedVideoList />
+      </div>
     </div>
   );
 };
