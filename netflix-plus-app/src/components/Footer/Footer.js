@@ -17,7 +17,9 @@ const Footer = function() {
     <footer className="text-center">
       <hr />
       <MenuList />
-      <p>Copyright {copyrightYear} | {developerName}</p>
+      <p>
+        Copyright {copyrightYear} | {developerName}
+      </p>
     </footer>
   );
 }

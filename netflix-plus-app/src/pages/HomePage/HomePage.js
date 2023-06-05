@@ -1,7 +1,9 @@
 // Fn comp with arrow fn
 
 import LatestVideo from "./LatestVideo/LatestVideo";
+import MyProfile from "./MyProfile/MyProfile";
 import RecommendedVideoList from "./RecommendedVideoList/RecommendedVideoList";
+import Subscription from "./Subscription/Subscription";
 import TrendingVideoList from "./TrendingVideoList/TrendingVideoList";
 
 // rafce
@@ -54,6 +56,16 @@ const HomePage = () => {
       <div className="mb-3">
         <h2>Recommended Videos | Class Comp, States, Events, Lists & Keys and Conditionals Demo</h2>
         <RecommendedVideoList />
+      </div>
+
+      <div className="mb-3">
+        <h2>Subscription | Styling in React - Demo</h2>
+        <Subscription />
+      </div>
+
+      <div className="mb-3">
+        <h2>My Profile | Two Way Binding in React - Demo</h2>
+        <MyProfile />
       </div>
     </div>
   );

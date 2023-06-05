@@ -10,7 +10,7 @@ PWA?
 Thinking in React
 ---
  0. Find out the number of components 
- 1. Break UI into component hierarchy 
+ 1. Break UI into component hierarchy
 
 Components
 --------- 
@@ -23,7 +23,7 @@ Components
       1.2 Functional Components with Anonymous Function [DONE]
       1.3 Functional Components with Arrow Function [DONE] [RECOMMENDED]
 
-  2. Class Components   (shared should be created in src/containers )
+  2. Class Components   (shared components should be created in src/containers )
       * coded as Object oriented class 
 
 JSX Limitations
@@ -40,7 +40,7 @@ Data Binding
   1. One Way Binding [DONE]
       * JSX can merely display the data of the variable. 
 
-  2. Two Way Binding
+  2. Two Way Binding 
       * keep the data in a variable and display it in JSX 
         then, update the data in a variable and see the changes in JSX 
 
@@ -59,12 +59,12 @@ Cross Component Communication / Sharing data b/w components
 
 Concepts
 -------
-  Data Binding 
-  Props 
-  States 
-  Events 
-  Lists and Keys 
-  Conditionals 
+  Data Binding [PARTIALLY]
+  Props [DONE]
+  States [DONE]
+  Events [DONE]
+  Lists and Keys [DONE]
+  Conditionals [DONE]
 
 
 Project Structure
@@ -91,3 +91,83 @@ Project Structure
       npm i react-bootstrap
   3. reactstrap 
       npm i reactstrap 
+
+Naming Conventions & Casing 
+----
+  Casing Types 
+  --------
+    1. PascalCase 
+        * Recommended for Object Oriented Program's classes 
+        * also Recommended for Interface in Java & TypeScript 
+        * all react components should be named in PascalCase
+        * all components folder should be of this type 
+
+        examples 
+        ---
+          class CarDetails {
+
+          }
+
+          interface Employee {
+
+          }
+
+    2. camelCase 
+        * Recommended for variables, const, functions, methods in JS & TS 
+        * Recommended for id's of html or JSX elements 
+
+        examples 
+        -----
+          var myCar = 'BMW';
+
+          function getCarInfo() {
+            //....
+          }
+    
+    3. kebab-case
+        * Recommended for URLs 
+        * Recommended for file names, folder names (if not react), assets in front end projects 
+        * Recommended for css classes 
+        * okay for id's of html elements if your architect says okay
+
+        examples 
+        -----
+          btn-primary
+          slideshow-container 
+          youtube-logo.png 
+
+    4. snake_case
+        * never ever use this. 
+        * okay for const in JS & TS if architect accepts
+
+        examples
+        ---
+          const MAX_STUDENTS_PER_CLASS = 30;
+
+
+Introduction to Cases [DONE]
+Styling in React
+---
+  1. External Styling
+      * external css from third party (ex: bootstrap)
+      * our own external css 
+
+  2. Internal Styling 
+  3. Inline Styling 
+
+
+Two Way Binding 
+Life Cycle Hooks 
+
+
+REST API calls 
+HOC
+...
+...
+...
+
+
+
+
+
+
