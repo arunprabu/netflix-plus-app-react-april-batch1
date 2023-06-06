@@ -25,6 +25,7 @@ Components
 
   2. Class Components   (shared components should be created in src/containers )
       * coded as Object oriented class 
+      * will have lifecycle hooks 
 
 JSX Limitations
 ---
@@ -155,8 +156,7 @@ Styling in React
   2. Internal Styling 
   3. Inline Styling 
 
-
-Two Way Binding 
+Two Way Binding [DONE]
 Life Cycle Hooks 
 
 

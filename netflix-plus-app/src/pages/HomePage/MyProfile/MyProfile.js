@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 
-export class MyProfile extends Component {
-  // JS <=> JSX
+class MyProfile extends Component {
+  // JS => JSX
   state = {
     profileName: "john",
   };

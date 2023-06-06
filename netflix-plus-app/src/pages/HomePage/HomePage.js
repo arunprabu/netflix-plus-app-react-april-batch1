@@ -1,6 +1,7 @@
 // Fn comp with arrow fn
 
 import LatestVideo from "./LatestVideo/LatestVideo";
+import LifeCycleDemo from "./LifeCycleDemo/LifeCycleDemo";
 import MyProfile from "./MyProfile/MyProfile";
 import RecommendedVideoList from "./RecommendedVideoList/RecommendedVideoList";
 import Subscription from "./Subscription/Subscription";
@@ -67,6 +68,12 @@ const HomePage = () => {
         <h2>My Profile | Two Way Binding in React - Demo</h2>
         <MyProfile />
       </div>
+
+      <div className="mb-3">
+        <h2>Life Cycle Hooks | Demo</h2>
+        <LifeCycleDemo />
+      </div>
+
     </div>
   );
 };
