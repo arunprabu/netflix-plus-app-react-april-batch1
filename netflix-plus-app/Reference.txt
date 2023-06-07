@@ -5,7 +5,27 @@ PWA?
  Installable only in Android 
 
  example: angular.io 
- 
+
+Single Page App (SPA) Characteristics (7)
+---------------
+  1. Pages should Not Refresh [DONE]
+  2. URL should be changed [DONE]
+  3. History should be maintained without Page Refresh [DONE]
+  4. Header and Footer should be intact. [DONE]
+  5. The section in between header and footer should be updated [DONE]
+  6. Active Menu should be set [TODO]
+  7. Page Title should also be changed [TODO]
+      Refer: learn about react-helmet in npmjs.com 
+
+  SPA Frameworks / Libraries 
+  ---------------------------
+    #1 React JS (Library) 
+    #2 VueJS (Framework)
+    #3 Angular (Framework)
+
+==========
+
+
  
 Thinking in React
 ---
@@ -157,7 +177,67 @@ Styling in React
   3. Inline Styling 
 
 Two Way Binding [DONE]
-Life Cycle Hooks 
+Life Cycle Hooks [DONE]
+
+Routing
+-----
+  Step 1:
+  ------
+    npm i react-router-dom
+
+  Step 2: 
+  -----
+    Identify the Menus and the URLs
+
+    Home                http://localhost:3001/
+    About Us            http://localhost:3001/about-us 
+    Contact Us          http://localhost:3001/contact-us
+
+  Step 3: 
+  ----  
+    Setup the Menus with proper URLs in MenuList.js 
+
+  Step 4:
+  ----
+    Identifing what comp should be loaded when I the following URL. 
+
+    http://localhost:3001/                   --> HomePage 
+    http://localhost:3001/about-us           --> AboutUsPage 
+    http://localhost:3001/contact-us         --> ContactUsPage 
+
+    Let's create the necessary components for the URLs 
+
+  Step 5:
+  -----
+    Config the Routes in App.js 
+    <BrowserRouter>
+      <div>
+        <Header></Header>
+
+        <main className="container mt-5 pt-2">
+          <Routes>
+            <Route path="/" element={<HomePage />}></Route>
+            <Route path="/about-us" element={<AboutUsPage />}></Route>
+            <Route path="/contact-us" element={<ContactUsPage />}></Route>
+          </Routes>
+        </main>
+
+        <Footer />
+      </div>
+    </BrowserRouter>
+
+  Step 6:
+  -----
+    Let's replace <a href=''> with <Link to=''> in MenuList.js 
+
+    
+
+
+
+
+
+
+  
 
 
 REST API calls 

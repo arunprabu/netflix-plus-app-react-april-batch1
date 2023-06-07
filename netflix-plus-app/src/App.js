@@ -6,20 +6,30 @@ import Header from './components/Header/Header';
 import Footer from './components/Footer/Footer';
 import HomePage from './pages/HomePage/HomePage';
 
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import AboutUsPage from './pages/AboutUsPage/AboutUsPage';
+import ContactUsPage from './pages/ContactUsPage/ContactUsPage';
+
 // App is a component
 // Comp definition
 function App() {
   // must return JSX
   return (
-    <div>
-      <Header></Header>
+    <BrowserRouter>
+      <div>
+        <Header></Header>
 
-      <main className="container mt-5 pt-2">
-        <HomePage/>
-      </main>
+        <main className="container mt-5 pt-2">
+          <Routes>
+            <Route path="/" element={<HomePage />}></Route>
+            <Route path="/about-us" element={<AboutUsPage />}></Route>
+            <Route path="/contact-us" element={<ContactUsPage />}></Route>
+          </Routes>
+        </main>
 
-      <Footer />
-    </div>
+        <Footer />
+      </div>
+    </BrowserRouter>
   );
 }
 
