@@ -1,4 +1,5 @@
 // error bounday should be a class comp
+// Refer: App.js -- this comp is used there
 import React, { Component } from 'react'
 
 class ErrorBoundary extends Component {

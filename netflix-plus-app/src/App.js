@@ -16,23 +16,25 @@ import ContactUsPage from './pages/ContactUsPage/ContactUsPage';
 function App() {
   // must return JSX
   return (
-    <BrowserRouter>
-      <div>
-        <Header></Header>
+    <ErrorBoundary>
+      <BrowserRouter>
+        <div>
+          <Header></Header>
 
-        <main className="container mt-5 pt-2">
-          <ErrorBoundary>
-            <Routes>
-              <Route path="/" element={<HomePage />}></Route>
-              <Route path="/about-us" element={<AboutUsPage />}></Route>
-              <Route path="/contact-us" element={<ContactUsPage />}></Route>
-            </Routes>
-          </ErrorBoundary>
-        </main>
+          <main className="container mt-5 pt-2">
+            <ErrorBoundary>
+              <Routes>
+                <Route path="/" element={<HomePage />}></Route>
+                <Route path="/about-us" element={<AboutUsPage />}></Route>
+                <Route path="/contact-us" element={<ContactUsPage />}></Route>
+              </Routes>
+            </ErrorBoundary>
+          </main>
 
-        <Footer />
-      </div>
-    </BrowserRouter>
+          <Footer />
+        </div>
+      </BrowserRouter>
+    </ErrorBoundary>
   );
 }
 
