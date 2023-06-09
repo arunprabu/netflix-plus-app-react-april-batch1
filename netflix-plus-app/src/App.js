@@ -5,6 +5,7 @@ import './App.css'; // CSS for App component
 import Header from './components/Header/Header';
 import Footer from './components/Footer/Footer';
 import HomePage from './pages/HomePage/HomePage';
+import ErrorBoundary from './containers/shared/ErrorBoundary/ErrorBoundary';
 
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import AboutUsPage from './pages/AboutUsPage/AboutUsPage';
@@ -20,11 +21,13 @@ function App() {
         <Header></Header>
 
         <main className="container mt-5 pt-2">
-          <Routes>
-            <Route path="/" element={<HomePage />}></Route>
-            <Route path="/about-us" element={<AboutUsPage />}></Route>
-            <Route path="/contact-us" element={<ContactUsPage />}></Route>
-          </Routes>
+          <ErrorBoundary>
+            <Routes>
+              <Route path="/" element={<HomePage />}></Route>
+              <Route path="/about-us" element={<AboutUsPage />}></Route>
+              <Route path="/contact-us" element={<ContactUsPage />}></Route>
+            </Routes>
+          </ErrorBoundary>
         </main>
 
         <Footer />

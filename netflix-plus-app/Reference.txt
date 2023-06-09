@@ -43,7 +43,7 @@ Components
       1.2 Functional Components with Anonymous Function [DONE]
       1.3 Functional Components with Arrow Function [DONE] [RECOMMENDED]
 
-  2. Class Components   (shared components should be created in src/containers )
+  2. Class Components   (shared class components should be created in src/containers )
       * coded as Object oriented class 
       * will have lifecycle hooks 
 
@@ -167,7 +167,7 @@ Naming Conventions & Casing
 
 
 Introduction to Cases [DONE]
-Styling in React
+Styling in React [DONE]
 ---
   1. External Styling
       * external css from third party (ex: bootstrap)
@@ -179,7 +179,7 @@ Styling in React
 Two Way Binding [DONE]
 Life Cycle Hooks [DONE]
 
-Routing
+Routing [DONE]
 -----
   Step 1:
   ------
@@ -230,21 +230,28 @@ Routing
   -----
     Let's replace <a href=''> with <Link to=''> in MenuList.js 
 
-    
+React without JSX [DONE]
+React without ES6 [DONE]
+Fragment [DONE]
+Strict Mode [DONE]
+Error Boundaries 
+Higher Order Component - HOC 
 
-
-
-
-
-
-  
-
+Typechecking With PropTypes
+Static Typechecking 
+Linting 
+Hooks (6-10 hours)
+  Context API 
 
 REST API calls 
-HOC
+Lazy Loading / Code Splitting
+Build 
+Deployment 
+Optimizing Performance 
 ...
-...
-...
+Unit Testing 
+
+Redux 
 
 
 

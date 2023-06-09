@@ -6,7 +6,6 @@
   *   * must return jsx
   * export
 */
-
 import MenuList from "../MenuList/MenuList";
 
 const Footer = function() {
@@ -25,3 +24,4 @@ const Footer = function() {
 }
 
 export default Footer;
+
