@@ -1,14 +1,12 @@
 import React from 'react'
 import MockFragment from './MockFragment/MockFragment';
 
-const AboutUsPage = () => {
-
-  const x = "10";
+const AboutUsPage = (props) => {
 
   return (
     <>
       <h1>AboutUsPage</h1>
-      <p>{x()}</p>
+      <p>{props.test()}</p>
 
       <h2>Demo of Mock Fragment</h2>
       <MockFragment>

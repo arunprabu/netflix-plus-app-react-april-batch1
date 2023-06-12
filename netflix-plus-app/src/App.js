@@ -10,6 +10,7 @@ import ErrorBoundary from './containers/shared/ErrorBoundary/ErrorBoundary';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import AboutUsPage from './pages/AboutUsPage/AboutUsPage';
 import ContactUsPage from './pages/ContactUsPage/ContactUsPage';
+import HocDemoPage from './pages/HocDemoPage/HocDemoPage';
 
 // App is a component
 // Comp definition
@@ -25,6 +26,7 @@ function App() {
             <ErrorBoundary>
               <Routes>
                 <Route path="/" element={<HomePage />}></Route>
+                <Route path='hoc-demo' element={<HocDemoPage />}></Route>
                 <Route path="/about-us" element={<AboutUsPage />}></Route>
                 <Route path="/contact-us" element={<ContactUsPage />}></Route>
               </Routes>

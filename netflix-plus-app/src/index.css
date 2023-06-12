@@ -1,2 +1,6 @@
 /* global css */
 /* app-wide styles */
+
+.red-box {
+  border: solid 3px red;
+}

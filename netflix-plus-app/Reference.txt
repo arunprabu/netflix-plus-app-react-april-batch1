@@ -234,8 +234,8 @@ React without JSX [DONE]
 React without ES6 [DONE]
 Fragment [DONE]
 Strict Mode [DONE]
-Error Boundaries 
-Higher Order Component - HOC 
+Error Boundaries [DONE]
+Higher Order Component - HOC [DONE]
 
 Typechecking With PropTypes
 Static Typechecking 
