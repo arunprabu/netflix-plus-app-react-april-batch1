@@ -1,4 +1,4 @@
-import PropTypes from "prop-types"; // ES6
+import PropTypes from 'prop-types'; // ES6
 
 const LatestVideo = (props) => {
   // you can receive the data from parent comp via props
@@ -31,7 +31,7 @@ LatestVideo.propTypes = {
   thumbnailUrl: PropTypes.string,
   views: PropTypes.string,
   publishedOn: PropTypes.string,
-  children: PropTypes.string,
+  children: PropTypes.string
 };
 
 export default LatestVideo;

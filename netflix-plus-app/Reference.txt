@@ -212,8 +212,47 @@ How to Setup ESLint and also prettier?
 
   Step 4: 
   --
-    we can setup prettier 
+    we can setup prettier now... 
+    create .prettierrc.json file in root folder 
 
+    then, have the formatting rules in it 
+ 
+    {
+      "singleQuote": true,
+      "trailingComma": "none"
+    }
+
+    Then, start formatiing.
+
+    Also refer for more of prettier config here 
+    https://medium.com/@frontend-newbie/integrating-prettier-with-eslint-for-your-create-react-app-in-vscode-153ebe89c1a2
+    
+
+  Step 5: 
+  ---
+    linting will show error in App.test.js file 
+    We have to tell eslint to understand that our project has jest in it. 
+
+    open .eslintrc.json and have the following in it 
+    "env": {
+      "browser": true,
+      "es2021": true,
+      "jest": true /// This line is needed to fix the error around JEST codes in App.test.js 
+    },
+
+  Step 6: 
+  ----
+  There will be a warning related to react version during linting.
+  Fix it by having the following in .eslintrc.json file 
+
+  "settings": {
+    "react": {
+      "version": "detect"
+    }
+  }
+
+  That's it. It's over!!!
+---
 
 ----
 

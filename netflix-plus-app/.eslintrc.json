@@ -1,7 +1,8 @@
 {
   "env": {
     "browser": true,
-    "es2021": true
+    "es2021": true,
+    "jest": true
   },
   "extends": ["standard", "plugin:react/recommended"],
   "parserOptions": {
@@ -9,5 +10,14 @@
     "sourceType": "module"
   },
   "plugins": ["react"],
-  "rules": {}
+  "rules": {
+    "semi": "off",
+    "react/react-in-jsx-scope": "off",
+    "indent": ["error", 2]
+  },
+  "settings": {
+    "react": {
+      "version": "detect"
+    }
+  }
 }

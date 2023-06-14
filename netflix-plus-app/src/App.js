@@ -1,5 +1,5 @@
 // App component is made up of JS, JSX and CSS (optional)
-// js 
+// js
 
 import './App.css'; // CSS for App component
 import Header from './components/Header/Header';
@@ -14,7 +14,7 @@ import HocDemoPage from './pages/HocDemoPage/HocDemoPage';
 
 // App is a component
 // Comp definition
-function App() {
+function App () {
   // must return JSX
   return (
     <ErrorBoundary>

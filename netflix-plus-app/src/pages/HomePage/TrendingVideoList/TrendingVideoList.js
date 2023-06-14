@@ -7,7 +7,7 @@
  * export
  */
 
-import { Component } from "react";
+import { Component } from 'react';
 
 // class comp must inherit Component class
 class TrendingVideoList extends Component {
@@ -15,48 +15,48 @@ class TrendingVideoList extends Component {
   // state is an object
   // state is a keyword in react
   state = {
-    videoResolution: "4K",
+    videoResolution: '4K',
     videos: [
       {
         id: 1,
         trendingRank: 1,
-        title: "Man Vs Wild",
-        thumbnailUrl: "https://placehold.co/260x220",
-        desc: "A Wild Adventure show in Discovery Channel",
-        views: "700K",
-        publishedOn: "1 week ago",
+        title: 'Man Vs Wild',
+        thumbnailUrl: 'https://placehold.co/260x220',
+        desc: 'A Wild Adventure show in Discovery Channel',
+        views: '700K',
+        publishedOn: '1 week ago'
       },
       {
         id: 2,
         trendingRank: 2,
-        title: "Planet Earth II",
-        thumbnailUrl: "https://placehold.co/260x220",
-        desc: "A show by David Attenborough on BBC Earth Channel",
-        views: "900K",
-        publishedOn: "2 weeks ago",
-      },
-    ],
+        title: 'Planet Earth II',
+        thumbnailUrl: 'https://placehold.co/260x220',
+        desc: 'A show by David Attenborough on BBC Earth Channel',
+        views: '900K',
+        publishedOn: '2 weeks ago'
+      }
+    ]
   };
 
-  // event handler method 
+  // event handler method
   handleChangeResolution = () => {
     // Do not mutate state directly. Use setState().
     // this.state.videoResolution = "8K";
     this.setState({
       videoResolution: '8K'
     });
-    // whenever setState is called -- render() method will be exec'd 
+    // whenever setState is called -- render() method will be exec'd
     // setState() will smartly merge the chage with other properties of state data
   }
 
   // must have render method
-  render() {
-    console.log("Inside Render Method");
+  render () {
+    console.log('Inside Render Method');
     // must return jsx
     return (
       <div className="row">
         <p>
-          Enjoy watching the videos in {this.state.videoResolution} Resolution{" "}
+          Enjoy watching the videos in {this.state.videoResolution} Resolution{' '}
           <button
             type="button"
             className="btn btn-primary btn-sm"
@@ -75,7 +75,7 @@ class TrendingVideoList extends Component {
             />
             <div className="card-body">
               <h5 className="card-title">
-                #{this.state.videos[0].trendingRank}{" "}
+                #{this.state.videos[0].trendingRank}{' '}
                 {this.state.videos[0].title}
               </h5>
               <p className="card-text">{this.state.videos[0].desc}</p>
@@ -100,7 +100,7 @@ class TrendingVideoList extends Component {
             />
             <div className="card-body">
               <h5 className="card-title">
-                #{this.state.videos[1].trendingRank}{" "}
+                #{this.state.videos[1].trendingRank}{' '}
                 {this.state.videos[1].title}
               </h5>
               <p className="card-text">{this.state.videos[1].desc}</p>

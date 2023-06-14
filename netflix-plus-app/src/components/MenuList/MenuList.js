@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link } from 'react-router-dom';
 
 // Functional Component with Arrow Function
 const MenuList = () => {

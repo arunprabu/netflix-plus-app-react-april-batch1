@@ -1,8 +1,8 @@
-import React from 'react'
+import React from 'react';
+import PropTypes from 'prop-types';
 import MockFragment from './MockFragment/MockFragment';
 
 const AboutUsPage = (props) => {
-
   return (
     <>
       <h1>AboutUsPage</h1>
@@ -15,6 +15,10 @@ const AboutUsPage = (props) => {
       </MockFragment>
     </>
   );
-}
+};
 
-export default AboutUsPage
+AboutUsPage.propTypes = {
+  test: PropTypes.func
+};
+
+export default AboutUsPage;

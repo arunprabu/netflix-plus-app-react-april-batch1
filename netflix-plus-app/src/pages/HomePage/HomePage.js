@@ -1,11 +1,11 @@
 // Fn comp with arrow fn
 
-import LatestVideo from "./LatestVideo/LatestVideo";
-import LifeCycleDemo from "./LifeCycleDemo/LifeCycleDemo";
-import MyProfile from "./MyProfile/MyProfile";
-import RecommendedVideoList from "./RecommendedVideoList/RecommendedVideoList";
-import Subscription from "./Subscription/Subscription";
-import TrendingVideoList from "./TrendingVideoList/TrendingVideoList";
+import LatestVideo from './LatestVideo/LatestVideo';
+import LifeCycleDemo from './LifeCycleDemo/LifeCycleDemo';
+import MyProfile from './MyProfile/MyProfile';
+import RecommendedVideoList from './RecommendedVideoList/RecommendedVideoList';
+import Subscription from './Subscription/Subscription';
+import TrendingVideoList from './TrendingVideoList/TrendingVideoList';
 
 // rafce
 const HomePage = () => {

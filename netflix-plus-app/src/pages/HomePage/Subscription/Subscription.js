@@ -2,7 +2,6 @@ import React from 'react'
 import './Subscription.css';
 
 const Subscription = () => {
-
   // internal styles
   const subscriptionStyles = {
     renewStyles: {
@@ -13,10 +12,10 @@ const Subscription = () => {
       padding: '20px'
     },
     btnStyles: {
-      border: "solid 2px red",
-      backgroundColor: "red",
-      color: "#fff",
-      padding: "10px 20px",
+      border: 'solid 2px red',
+      backgroundColor: 'red',
+      color: '#fff',
+      padding: '10px 20px'
     }
   }
 
@@ -30,11 +29,11 @@ const Subscription = () => {
       {/* Inline CSS - NEVER EVER WRITE THIS IN LISTS / LOOPS */}
       <p
         style={{
-          color: "red",
-          backgroundColor: "yellow",
-          border: "solid 3px red",
-          padding: "20px",
-          borderRadius: "6px",
+          color: 'red',
+          backgroundColor: 'yellow',
+          border: 'solid 3px red',
+          padding: '20px',
+          borderRadius: '6px'
         }}
       >
         Your Subscription will end in two weeks

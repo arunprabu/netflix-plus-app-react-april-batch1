@@ -1,13 +1,13 @@
-// Functional Component with Named Function 
+// Functional Component with Named Function
 
-import MenuList from "../MenuList/MenuList";
+import MenuList from '../MenuList/MenuList';
 
 // imports (optional)
-// comp defn 
-  // must return JSX 
-// export 
+// comp defn
+// must return JSX
+// export
 
-function Header() {
+function Header () {
   return (
     <header>
       <nav className="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
@@ -28,7 +28,7 @@ function Header() {
           </button>
           <div className="collapse navbar-collapse" id="navbarCollapse">
             <MenuList />
-           
+
             <form className="d-flex" role="search">
               <input
                 className="form-control me-2"
