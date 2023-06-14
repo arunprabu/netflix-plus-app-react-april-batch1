@@ -1,16 +1,16 @@
 // Functional Component with Anonymous Function
 
 /*
-  * imports (optional)
-  * comp defn 
-  *   * must return jsx
-  * export
-*/
+ * imports (optional)
+ * comp defn
+ *   * must return jsx
+ * export
+ */
 import MenuList from "../MenuList/MenuList";
 
-const Footer = function() {
+const Footer = function () {
   const copyrightYear = 2023;
-  const developerName = 'Arun';
+  const developerName = "Arun";
 
   return (
     <footer className="text-center">
@@ -21,7 +21,6 @@ const Footer = function() {
       </p>
     </footer>
   );
-}
+};
 
 export default Footer;
-

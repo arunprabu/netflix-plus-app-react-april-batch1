@@ -166,6 +166,57 @@ Naming Conventions & Casing
           const MAX_STUDENTS_PER_CLASS = 30;
 
 
+Types of Languages based on Data Typing 
+---
+  1. Strictly-Typed / Strongly-Typed Languages 
+      Examples: Java, C#, TypeScript 
+      -----
+        String myName = "Arun"; // valid
+        myName = true; // compilation error
+        
+  2. Loosely-Typed / Dynamically-Typed Languages
+      Examples: JavaScript, PHP, Python
+      ------
+        var myName = "Arun";  // valid 
+        myName = true; // valid 
+        myName = 100; // valid 
+        myName = []; // valid 
+        myName = {}; // valid 
+        myName = undefined; // valid 
+        myName = null; // valid 
+
+
+Static Typechecking in ReactJS 
+----
+  1. TypeScript  (.tsx)
+  2. FlowJS (.js)
+  3. PropTypes 
+
+
+How to Setup ESLint and also prettier?
+=========
+  Step 1: 
+    npm i eslint -D 
+  
+  Step 2: 
+    try the following command 
+      npx eslint --init 
+      or 
+      You can also run this command directly using 'npm init @eslint/config'.
+
+    to create .eslintrc.json 
+  
+  Step 3:
+  --
+    we can setup the rules or inherit from standard rules
+
+  Step 4: 
+  --
+    we can setup prettier 
+
+
+----
+
 Introduction to Cases [DONE]
 Styling in React [DONE]
 ---
@@ -237,9 +288,15 @@ Strict Mode [DONE]
 Error Boundaries [DONE]
 Higher Order Component - HOC [DONE]
 
-Typechecking With PropTypes
+
+---------------
+
+
 Static Typechecking 
+Typechecking With PropTypes
 Linting 
+  ESLINT 
+
 Hooks (6-10 hours)
   Context API 
 

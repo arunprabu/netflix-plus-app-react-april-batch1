@@ -5,7 +5,7 @@ const applyStyles = (OriginalComponent) => {
   console.log(OriginalComponent);
   
   const NewComponent = (props) => {
-    console.log(props);
+    console.log(props); 
     return (
       <div className="red-box">
         <OriginalComponent {...props}/>
