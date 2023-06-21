@@ -43,9 +43,20 @@ Components
       1.2 Functional Components with Anonymous Function [DONE]
       1.3 Functional Components with Arrow Function [DONE] [RECOMMENDED]
 
+      Till v16.7 (before 2018)
+      ----  
+        * fn components did not have state. 
+        * fn components did not have lifecycle hooks
+
+      After v16.8 (after 2018)
+      ----
+        * fn components can have state. 
+        * fn components can have life cycle hooks kind of alternatives. 
+
   2. Class Components   (shared class components should be created in src/containers )
       * coded as Object oriented class 
       * will have lifecycle hooks 
+
 
 JSX Limitations
 ---
@@ -102,7 +113,12 @@ Project Structure
         LatestVideo/
           LatestVideo.js 
         HomePage.js
-      
+      HooksDemoPage/ 
+      HocDemoPage/
+      AboutUsPage/
+      ContactUsPage/
+    hoc/
+    
 
 3 Ways to integrate bootstrap 
 --
@@ -255,6 +271,11 @@ How to Setup ESLint and also prettier?
 ---
 
 ----
+Hooks 
+-----
+
+
+
 
 Introduction to Cases [DONE]
 Styling in React [DONE]
@@ -327,25 +348,27 @@ Strict Mode [DONE]
 Error Boundaries [DONE]
 Higher Order Component - HOC [DONE]
 
-
 ---------------
 
-
-Static Typechecking 
-Typechecking With PropTypes
-Linting 
+Static Typechecking [DONE]
+Typechecking With PropTypes  [DONE]
+Linting  [DONE]
   ESLINT 
+  Prettier 
 
 Hooks (6-10 hours)
   Context API 
 
+Forms and Inputs in React JS 
 REST API calls 
+
+Unit Testing [20 Hours]
+
 Lazy Loading / Code Splitting
 Build 
 Deployment 
 Optimizing Performance 
 ...
-Unit Testing 
 
 Redux 
 
