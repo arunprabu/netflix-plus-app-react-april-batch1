@@ -2,7 +2,7 @@
 // takes a component as input and return a new comp as output
 
 const applyStyles = (OriginalComponent) => {
-  console.log(OriginalComponent);
+  // console.log(OriginalComponent);
 
   const NewComponent = (props) => {
     console.log(props);

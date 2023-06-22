@@ -5,7 +5,7 @@ import { NavLink } from 'react-router-dom';
 // Functional Component with Arrow Function
 const MenuList = () => {
   // keep the menus array of object with path, title, id
-  // in place of li render MenuItem 4 times with key being unique
+  // in place of li render MenuItem 4 or 5 times with key being unique
 
   return (
     <ul className="navbar-nav me-auto mb-2 mb-md-0">
