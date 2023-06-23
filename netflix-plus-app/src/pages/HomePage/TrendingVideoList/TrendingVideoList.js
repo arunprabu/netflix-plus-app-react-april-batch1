@@ -67,6 +67,7 @@ class TrendingVideoList extends Component {
         </p>
 
         <div className="col-md-3">
+
           <div className="card">
             <img
               src={this.state.videos[0].thumbnailUrl}
@@ -89,6 +90,7 @@ class TrendingVideoList extends Component {
               </li>
             </ul>
           </div>
+
         </div>
 
         <div className="col-md-3">
