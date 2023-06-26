@@ -357,6 +357,9 @@ Linting  [DONE]
   Prettier 
 
 Hooks (6-10 hours)
+  useState
+  useEffect
+  useRef p
   Context API 
 
 Forms and Inputs in React JS 
