@@ -273,7 +273,14 @@ How to Setup ESLint and also prettier?
 ----
 Hooks 
 -----
-  
+  u
+
+/* Ways to make REST API Calls in JS
+  1. using AJAX (XMLHttpRequest)    -- Native JS
+  2. using promised based fetch api (introduced in 2015  -- Native JS)
+  3. using axios (third-party) 
+
+*/
 
 
 
@@ -357,9 +364,11 @@ Linting  [DONE]
   Prettier 
 
 Hooks (6-10 hours)
-  useState
-  useEffect
-  useRef p
+  useState [DONE]
+  useEffect [DONE]
+  useRef [DONE]
+  useReducer [DONE]
+  useId
   Context API 
 
 Forms and Inputs in React JS 

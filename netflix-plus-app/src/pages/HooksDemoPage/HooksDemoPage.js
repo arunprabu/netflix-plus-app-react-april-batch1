@@ -3,6 +3,7 @@ import MyAccount from './MyAccount/MyAccount';
 import Blog from './Blog/Blog';
 import TodosVariant1 from './TodosVariant1/TodosVariant1';
 import TodosVariant2 from './TodosVariant2/TodosVariant2';
+import PaymentForm from './PaymentForm/PaymentForm';
 
 const HooksDemoPage = () => {
   return (
@@ -20,7 +21,8 @@ const HooksDemoPage = () => {
       <TodosVariant1 />
       <TodosVariant2 />
 
-      {/* <h2>useId Hook</h2> */}
+      <h2>useId Hook</h2>
+      <PaymentForm />
     </>
   );
 }
