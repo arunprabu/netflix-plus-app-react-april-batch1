@@ -34,6 +34,11 @@ const MenuList = () => {
           Hooks Demo
         </NavLink>
       </li>
+      <li className="nav-item">
+        <NavLink className="nav-link" to="/shop">
+          Shop
+        </NavLink>
+      </li>
     </ul>
   );
 };
