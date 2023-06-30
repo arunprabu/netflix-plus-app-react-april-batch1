@@ -1,3 +1,6 @@
+import { useContext } from 'react';
+import { CartContext } from '../../contexts/CartContext';
+
 const ShopPage = () => {
   const products = [
     {
@@ -18,9 +21,16 @@ const ShopPage = () => {
     }
   ];
 
+  const cart = useContext(CartContext);
+  console.log(cart);
+
   const handleAddToCart = (product) => {
     console.log(product);
-  }
+    cart.cartDispatch({
+      type: 'ADD_TO_CART',
+      payload: product
+    });
+  };
 
   return (
     <>

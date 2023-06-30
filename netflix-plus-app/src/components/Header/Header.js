@@ -1,6 +1,8 @@
 // Functional Component with Named Function
 
+import { useContext } from 'react';
 import MenuList from '../MenuList/MenuList';
+import { CartContext } from '../../contexts/CartContext';
 
 // imports (optional)
 // comp defn
@@ -8,6 +10,9 @@ import MenuList from '../MenuList/MenuList';
 // export
 
 function Header () {
+  const cart = useContext(CartContext);
+  console.log(cart);
+
   return (
     <header>
       <nav className="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
@@ -30,7 +35,7 @@ function Header () {
             <MenuList />
 
             <button className="btn btn-danger" type="button">
-              Cart (0)
+              Cart ({cart.cartState?.length === undefined ? '0' : cart.cartState?.length})
             </button>
           </div>
         </div>

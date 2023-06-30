@@ -14,6 +14,9 @@ import HocDemoPage from './pages/HocDemoPage/HocDemoPage';
 import HooksDemoPage from './pages/HooksDemoPage/HooksDemoPage';
 import { PageContext } from './contexts/PageContext';
 import ShopPage from './pages/ShopPage/ShopPage';
+import { CartContext } from './contexts/CartContext';
+import { useReducer } from 'react';
+import cartReducer from './reducers/cartReducer';
 
 // App is a component
 // Comp definition
@@ -23,35 +26,48 @@ function App () {
     lastLogin: 'yesterday 1pm'
   }
 
+  // supply state (needed for header comp) and
+  // dispatcher fn (needed for ShopPage comp) thru cart context.
+  const [cartState, cartDispatch] = useReducer(cartReducer);
+  console.log(cartState); // needed for header comp
+  console.log(cartDispatch); // needed for ShopPage comp
+
+  const cart = {
+    cartState,
+    cartDispatch
+  };
+
   // must return JSX
   return (
     <ErrorBoundary>
-      <BrowserRouter>
-        <div>
-          <Header></Header>
+      <CartContext.Provider value={cart}>
+        <BrowserRouter>
+          <div>
+            <Header></Header>
 
-          <main className="container mt-5 pt-2">
-            <ErrorBoundary>
-              {/* Step 2 of Context API:
+            <main className="container mt-5 pt-2">
+              <ErrorBoundary>
+                {/* Step 2 of Context API:
                 Using <PageContext.Provider> to share the data across the select few components
                 // for step 3 refer ContactUsPage.js
               */}
-              <PageContext.Provider value={userStatus}>
-                <Routes>
-                  <Route path="/" element={<HomePage />}></Route>
-                  <Route path="hoc-demo" element={<HocDemoPage />}></Route>
-                  <Route path="/about-us" element={<AboutUsPage />}></Route>
-                  <Route path="/contact-us" element={<ContactUsPage />}></Route>
-                  <Route path="/hooks-demo" element={<HooksDemoPage />}></Route>
-                  <Route path="/shop" element={<ShopPage />}></Route>
-                </Routes>
-              </PageContext.Provider>
-            </ErrorBoundary>
-          </main>
+                <PageContext.Provider value={userStatus}>
+                  <Routes>
+                    <Route path="/" element={<HomePage />}></Route>
+                    <Route path="hoc-demo" element={<HocDemoPage />}></Route>
+                    <Route path="/about-us" element={<AboutUsPage />}></Route>
+                    <Route path="/contact-us" element={<ContactUsPage />}></Route>
+                    <Route path="/hooks-demo" element={<HooksDemoPage />}></Route>
+                    <Route path="/shop" element={<ShopPage />}></Route>
+                  </Routes>
+                </PageContext.Provider>
+              </ErrorBoundary>
+            </main>
 
-          <Footer />
-        </div>
-      </BrowserRouter>
+            <Footer />
+          </div>
+        </BrowserRouter>
+      </CartContext.Provider>
     </ErrorBoundary>
   );
 }
