@@ -525,6 +525,7 @@ Development
     3. if wrong inputs entered -- add button should be disabled
     4. add button should + icon
 
+
   feature: add 
   -----
     function add(a, b){
@@ -600,10 +601,38 @@ Automated Testing
           * Playwright 
 
 
+To Learn 
+---
+  1. How to write test cases?
+  2. Where to write test cases? 
+  3. How to test the app by tools? 
 
+Unit Testing Topics 
+==================
+  0. File walkthru 
+  1. Testing JSX Elements 
+      * getByText 
+      * getByTestId 
+      * ..
+  2. Testing Props 
+  3. Testing inline CSS 
+  4. Testing External CSS (CSS class) 
+  5. Testing Events & States 
+  6. Testing Events with Buttons 
+  7. Snapshot Testing 
+  8. Testing Forms 
+      Ref: ContactUsPage.js and ContactUsPage.test.js 
+      Validate the form 
 
-
-
+  9. Testing REST API Calls 
+      * with mocks 
+        1. using fetch 
+        2. using axios [TODO]
+      * with spies 
+      * negative test 
+  10. Testing Routing [TODO]
+  11. Setup and Tear Down 
+  12. Code Coverage 
 
 
 

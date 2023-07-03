@@ -4,19 +4,14 @@
 import './App.css'; // CSS for App component
 import Header from './components/Header/Header';
 import Footer from './components/Footer/Footer';
-import HomePage from './pages/HomePage/HomePage';
 import ErrorBoundary from './containers/shared/ErrorBoundary/ErrorBoundary';
 
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import AboutUsPage from './pages/AboutUsPage/AboutUsPage';
-import ContactUsPage from './pages/ContactUsPage/ContactUsPage';
-import HocDemoPage from './pages/HocDemoPage/HocDemoPage';
-import HooksDemoPage from './pages/HooksDemoPage/HooksDemoPage';
+import { BrowserRouter } from 'react-router-dom';
 import { PageContext } from './contexts/PageContext';
-import ShopPage from './pages/ShopPage/ShopPage';
 import { CartContext } from './contexts/CartContext';
 import { useReducer } from 'react';
 import cartReducer from './reducers/cartReducer';
+import AppRoutes from './routes/AppRoutes';
 
 // App is a component
 // Comp definition
@@ -52,14 +47,7 @@ function App () {
                 // for step 3 refer ContactUsPage.js
               */}
                 <PageContext.Provider value={userStatus}>
-                  <Routes>
-                    <Route path="/" element={<HomePage />}></Route>
-                    <Route path="hoc-demo" element={<HocDemoPage />}></Route>
-                    <Route path="/about-us" element={<AboutUsPage />}></Route>
-                    <Route path="/contact-us" element={<ContactUsPage />}></Route>
-                    <Route path="/hooks-demo" element={<HooksDemoPage />}></Route>
-                    <Route path="/shop" element={<ShopPage />}></Route>
-                  </Routes>
+                  <AppRoutes />
                 </PageContext.Provider>
               </ErrorBoundary>
             </main>
