@@ -578,7 +578,7 @@ Automated Testing
         Tools: 
         ----  
           JEST JS (Unit Testing Framework + Test Runner)
-          React Testing Library (RTL)
+          React Testing Library (RTL)  = DOM Querying Utility
 
     2. Integration Testing 
         * Testing the component by integrating multiple components together 
@@ -609,10 +609,10 @@ To Learn
 
 Unit Testing Topics 
 ==================
-  0. File walkthru 
+  0. File walkthru [DONE]
   1. Testing JSX Elements 
-      * getByText 
-      * getByTestId 
+      * getByText [DONE]
+      * getByTestId [DONE]
       * ..
   2. Testing Props 
   3. Testing inline CSS 
@@ -622,7 +622,7 @@ Unit Testing Topics
   7. Snapshot Testing 
   8. Testing Forms 
       Ref: ContactUsPage.js and ContactUsPage.test.js 
-      Validate the form 
+      Validate the form using test cases
 
   9. Testing REST API Calls 
       * with mocks 
