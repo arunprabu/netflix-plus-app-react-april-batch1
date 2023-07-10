@@ -613,10 +613,10 @@ Unit Testing Topics
   1. Testing JSX Elements 
       * getByText [DONE]
       * getByTestId [DONE]
-      * ..
-  2. Testing Props 
-  3. Testing inline CSS 
-  4. Testing External CSS (CSS class) 
+      * getByPlaceholderText [DONE]
+  2. Testing Props [DONE]
+  3. Testing inline CSS [DONE]
+  4. Testing External CSS (CSS class) [TODO]
   5. Testing Events & States 
   6. Testing Events with Buttons 
   7. Snapshot Testing 
@@ -637,3 +637,21 @@ Unit Testing Topics
 
 
 
+Note: Share Edit input default value related code to Sasikala 
+
+Capstone Project 
+-----
+  Header 
+  Footer 
+  Menu 
+
+  Home 
+  Products 
+    List 
+    Details 
+    Reviews [Pending]
+  
+  About 
+  Contact 
+    ContactInfo 
+    ContactForm [Pending]

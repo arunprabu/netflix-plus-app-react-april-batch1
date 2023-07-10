@@ -1,4 +1,4 @@
-import { render, screen } from '@testing-library/react';
+import { fireEvent, render, screen } from '@testing-library/react';
 import CompanyInfo from './CompanyInfo';
 
 // TEST SUITE = group of related tests or test specs
@@ -22,4 +22,50 @@ describe('CompanyInfo', () => {
 
   // TODO: receives headquarters prop and displays in JSX
   // in browser I want to see this 'Headquarters: Teaneck, New Jersey, U.S'
+
+  // Testing Inline Styles
+  it('has company founded year in red color text and fontSize 20px', () => {
+    render(<CompanyInfo foundedYear="2000" />);
+    const foundedYear = screen.getByTestId('foundedYear');
+    // [RECOMMENDED]: to use colors in either rgb format or hexa in both comp and test
+    expect(foundedYear).toHaveStyle({
+      color: 'rgb(255, 0, 0)',
+      fontSize: '20px'
+    });
+  });
+
+  // TODO: Testing External Css Class
+  /*
+   * testing whether a button has css class btn-primary
+   * the button should have the text - JOIN COGNIZANT
+   * use data-testid
+   * you can have multiple expectations
+   */
+
+  // Let's find out whether the input has the right placeholder
+  it('has an input with `Enter Your Country Name` as placeholder text', () => {
+    render(<CompanyInfo />);
+    // finding input element
+    const countryInput = screen.getByPlaceholderText('Enter Your Country Name');
+    expect(countryInput).toBeTruthy();
+  });
+
+  it('displays countryName USA by default and updates JSX onChange of country input', () => {
+    render(<CompanyInfo />);
+    // finding input element
+    const countryInput = screen.getByPlaceholderText('Enter Your Country Name');
+    console.log(countryInput.value);
+    expect(countryInput.value).toBe('USA');
+
+    // now checking whether the onChange event handler is working or not
+    // as the comp is rendered in test runner -- we can't use mouse or keyboard as input devices
+    // so, let's trigger the event thru program
+    fireEvent.change(countryInput, { target: { value: 'Japan' } });
+    // finally let's check if the input element is showing the change
+    expect(countryInput.value).toBe('Japan');
+
+    expect(screen.getByTestId('visitWebsite')).toHaveTextContent(
+      'Please visit Cognizant Japan Website'
+    );
+  });
 });
