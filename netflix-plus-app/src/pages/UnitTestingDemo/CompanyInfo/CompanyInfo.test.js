@@ -1,4 +1,5 @@
 import { fireEvent, render, screen } from '@testing-library/react';
+import renderer from 'react-test-renderer';
 import CompanyInfo from './CompanyInfo';
 
 // TEST SUITE = group of related tests or test specs
@@ -57,15 +58,31 @@ describe('CompanyInfo', () => {
     console.log(countryInput.value);
     expect(countryInput.value).toBe('USA');
 
+    const mockEventObject = {
+      target: {
+        value: 'Japan'
+      }
+    };
+
     // now checking whether the onChange event handler is working or not
     // as the comp is rendered in test runner -- we can't use mouse or keyboard as input devices
     // so, let's trigger the event thru program
-    fireEvent.change(countryInput, { target: { value: 'Japan' } });
+    fireEvent.change(countryInput, mockEventObject);
     // finally let's check if the input element is showing the change
     expect(countryInput.value).toBe('Japan');
 
     expect(screen.getByTestId('visitWebsite')).toHaveTextContent(
       'Please visit Cognizant Japan Website'
     );
+  });
+
+  // Snapshot Testing
+  it('has right CompanyInfo snapshot with all requirements completed', () => {
+    // to take snapshot you need to use react-test-renderer // npm i react-test-renderer -D
+    // Taking snapshot and converting it into JSON
+    // [RECOMMENDED]: Take snapshot with all possible props as well as props children
+    const snapshotInJson = renderer.create(<CompanyInfo foundedYear="2006"/>).toJSON();
+    // Let's assert
+    expect(snapshotInJson).toMatchSnapshot();
   });
 });

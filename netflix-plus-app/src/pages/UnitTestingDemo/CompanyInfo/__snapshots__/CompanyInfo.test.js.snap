@@ -1,0 +1,39 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CompanyInfo has right CompanyInfo snapshot with all requirements completed 1`] = `
+<div>
+  <h2>
+    Company Info | Testing JSX, Props, CSS, Events, States and Snapshot!
+  </h2>
+  <h3
+    data-testid="companyName"
+  >
+    Company Name: Cognizant
+  </h3>
+  <p
+    data-testid="foundedYear"
+    style={
+      Object {
+        "color": "#ff0000",
+        "fontSize": "20px",
+      }
+    }
+  >
+    Founded Year: 
+    2006
+  </p>
+  <input
+    onChange={[Function]}
+    placeholder="Enter Your Country Name"
+    type="text"
+    value="USA"
+  />
+  <p
+    data-testid="visitWebsite"
+  >
+    Please visit Cognizant 
+    USA
+     Website
+  </p>
+</div>
+`;
