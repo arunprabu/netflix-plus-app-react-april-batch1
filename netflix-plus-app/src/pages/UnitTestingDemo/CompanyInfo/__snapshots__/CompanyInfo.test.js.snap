@@ -3,7 +3,7 @@
 exports[`CompanyInfo has right CompanyInfo snapshot with all requirements completed 1`] = `
 <div>
   <h2>
-    Company Info | Testing JSX, Props, CSS, Events, States and Snapshot!
+    Company Info | Testing JSX, Props, CSS, Events, States and Snapshot
   </h2>
   <h3
     data-testid="companyName"
