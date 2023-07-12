@@ -618,7 +618,7 @@ Unit Testing Topics
   3. Testing inline CSS [DONE]
   4. Testing External CSS (CSS class) [TODO]
   5. Testing Events & States [DONE]
-  6. Testing Events with Buttons 
+  6. Testing Events with Buttons [DONE]
   7. Snapshot Testing [DONE]
   8. Testing Forms 
       Ref: ContactUsPage.js and ContactUsPage.test.js 

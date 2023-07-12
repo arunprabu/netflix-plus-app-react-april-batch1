@@ -11,7 +11,7 @@ const Counter = () => {
 
   return (
     <div>
-      <h2>Counter | Testing Click ans state update with Conditionals</h2>
+      <h2>Counter | Testing Click and state update with Conditionals</h2>
       <p data-testid="counterValue">Counter Value: {ticker}</p>
 
       <button
