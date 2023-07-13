@@ -1,5 +1,6 @@
 import { useContext, useState } from 'react';
 import { PageContext } from '../../contexts/PageContext';
+import axios from 'axios';
 
 const ContactUsPage = () => {
   const userStatus = useContext(PageContext);
@@ -9,7 +10,10 @@ const ContactUsPage = () => {
     fullName: '',
     email: '',
     phone: '',
-    query: ''
+    query: '',
+    isSubmitting: false,
+    isSaved: false,
+    isError: false
   });
 
   /* steps
@@ -17,16 +21,47 @@ const ContactUsPage = () => {
       1.1 stop the page refresh [DONE]
       1.2 read the form data [DONE]
     2. send the form data to the rest api
-      2.1 What's the REST API URL?
-      2.2 What's the Http Method?
+      2.1 What's the REST API URL? https://jsonplaceholder.typicode.com/users
+      2.2 What's the Http Method? POST
       2.3 What's the REST API Client? axios or fetch
-      2.4 What's the form data?
+      2.4 What's the form data? formState
     3. display the form submission status
   */
 
   const handleSubmit = (event) => {
     event.preventDefault(); // stop the page refresh
     console.log(formState);
+
+    setFormState({
+      ...formState,
+      isSubmitting: true,
+      isSaved: false,
+      isError: false
+    });
+
+    axios
+      .post('https://jsonplaceholder.typicode.com/users', formState)
+      .then((res) => {
+        console.log(res);
+        setFormState({
+          ...formState,
+          isSubmitting: false,
+          isSaved: true,
+          isError: false
+        });
+      })
+      .catch((err) => {
+        console.log(err);
+        setFormState({
+          ...formState,
+          isSubmitting: false,
+          isSaved: false,
+          isError: true
+        });
+      })
+      .finally(() => {
+        console.log('It is over!');
+      });
   };
 
   const handleChange = (event) => {
@@ -99,8 +134,13 @@ const ContactUsPage = () => {
             onChange={handleChange}
           />
         </div>
-        <button type="submit" className="btn btn-primary">
-          Submit
+        {formState.isSaved && <div className="alert alert-success">Saved Successfully!</div>}
+        {formState.isError && (
+          <div className="alert alert-danger">Sorry! Some error occurred. Try again later!</div>
+        )}
+        <button type="submit" className="btn btn-primary"
+          disabled={formState.isSubmitting || formState.fullName === '' }>
+          {formState.isSubmitting ? 'Submitting.... Please wait' : 'Submit'}
         </button>
       </form>
     </div>

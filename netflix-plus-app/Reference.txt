@@ -623,6 +623,7 @@ Unit Testing Topics
   8. Testing Forms 
       Ref: ContactUsPage.js and ContactUsPage.test.js 
       Validate the form using test cases
+      html form 
 
   9. Testing REST API Calls 
       * with mocks 
@@ -655,3 +656,4 @@ Capstone Project
   Contact 
     ContactInfo 
     ContactForm [Pending]
+      use react-hook-form 
