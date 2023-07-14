@@ -628,7 +628,10 @@ Unit Testing Topics
   9. Testing REST API Calls 
       * with mocks 
         1. using fetch [TODO]
-        2. using axios 
+            https://github.com/arunprabu/plain-ui-react-course-feb-2023/blob/master/youtube-react-app/src/pages/UnitTestingDemoPage/Users/Users.js
+            https://github.com/arunprabu/plain-ui-react-course-feb-2023/blob/master/youtube-react-app/src/pages/UnitTestingDemoPage/Users/Users.test.js
+            https://github.com/arunprabu/plain-ui-react-course-feb-2023/blob/master/youtube-react-app/src/utils/fetchApi.js
+        2. using axios [DONE]
       * with spies 
       * negative test 
   10. Testing Routing [TODO]

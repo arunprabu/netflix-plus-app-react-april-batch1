@@ -69,11 +69,3 @@ describe('Users', () => {
     expect(errorElement).toBeInTheDocument();
   });
 });
-
-// // static
-// screen.getByRole('button');
-// screen.getAllByRole('button');
-
-// // dynamic element
-// screen.findByText()
-// screen.findAllByText()
