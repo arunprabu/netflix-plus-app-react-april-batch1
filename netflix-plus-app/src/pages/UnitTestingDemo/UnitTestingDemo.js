@@ -1,5 +1,6 @@
 import CompanyInfo from './CompanyInfo/CompanyInfo';
 import Counter from './Counter/Counter';
+import Users from './Users/Users';
 
 const UnitTestingDemo = () => {
   return (
@@ -8,10 +9,16 @@ const UnitTestingDemo = () => {
 
       <CompanyInfo foundedYear="1994" />
 
-      <hr/>
+      <hr />
       <Counter />
+
+      <hr />
+      <h2>For Testing Forms Refer ContactUsPage.js and ContactUsPage.test.js</h2>
+
+      <hr/>
+      <Users />
     </div>
-  )
+  );
 }
 
 export default UnitTestingDemo;
