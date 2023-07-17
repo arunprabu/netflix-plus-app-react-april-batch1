@@ -1,5 +1,6 @@
 import CompanyInfo from './CompanyInfo/CompanyInfo';
 import Counter from './Counter/Counter';
+import Posts from './Posts/Posts';
 import Users from './Users/Users';
 
 const UnitTestingDemo = () => {
@@ -17,6 +18,9 @@ const UnitTestingDemo = () => {
 
       <hr/>
       <Users />
+
+      <hr/>
+      <Posts />
     </div>
   );
 }
