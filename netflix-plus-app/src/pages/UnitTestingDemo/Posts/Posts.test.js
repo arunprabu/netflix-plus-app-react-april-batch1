@@ -11,6 +11,11 @@ describe('Posts', () => {
     jest.spyOn(window, 'fetch').mockImplementation(mockFetch);
   });
 
+  // tear down
+  afterEach(() => {
+    jest.resetAllMocks();
+  });
+
   it('[SPYING]: renders posts properly', async () => {
     render(<Posts />);
     // AA
