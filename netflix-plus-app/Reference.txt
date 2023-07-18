@@ -632,15 +632,17 @@ Unit Testing Topics
             https://github.com/arunprabu/plain-ui-react-course-feb-2023/blob/master/youtube-react-app/src/pages/UnitTestingDemoPage/Users/Users.test.js
             https://github.com/arunprabu/plain-ui-react-course-feb-2023/blob/master/youtube-react-app/src/utils/fetchApi.js
         2. using axios [DONE]
+            positive test (DONE)
+            negative test (DONE)
       * with spies 
-        1. using fetch []
+        1. using fetch [DONE]
+          positive test (DONE)
+          negative test (TODO)
         2. using axios [TODO]
       * negative test 
   10. Testing Routing [TODO]
-  11. Setup and Tear Down 
+  11. Setup and Tear Down [DONE]
   12. Code Coverage 
-
-
 
 
 Note: Share Edit input default value related code to Sasikala 
