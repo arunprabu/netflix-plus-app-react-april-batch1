@@ -3,6 +3,7 @@ import MyAccount from './MyAccount/MyAccount';
 import Blog from './Blog/Blog';
 import TodosVariant1 from './TodosVariant1/TodosVariant1';
 import TodosVariant2 from './TodosVariant2/TodosVariant2';
+// The following is lazy loaded
 const PaymentForm = React.lazy(() => import('./PaymentForm/PaymentForm'));
 
 const HooksDemoPage = () => {
