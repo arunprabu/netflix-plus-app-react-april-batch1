@@ -757,7 +757,8 @@ ReactJS - Performace Tips
 
 4. Lazy Load Images 
   https://www.npmjs.com/package/react-lazy-load-image-component
-5. Use profiler to record the app pages. And then check and fix the app. 
+5. Use profiler, network, performance, memory tabs in chrome inspector. 
+    learn to record the app pages. And then check and fix the app. 
 6. Use Redux Dev Tools to check how long it take for the actions.
 7. Think about optimizing back end also. 
 8. Avoid having unnecessary tags, css. go with Fragment, <></>, 
