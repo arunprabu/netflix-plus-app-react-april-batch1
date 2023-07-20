@@ -22,4 +22,6 @@ describe('Posts', () => {
     const textElement = await screen.findByText('leave first ball');
     expect(textElement).toBeInTheDocument();
   });
+
+  // TODO: renders error properly
 });

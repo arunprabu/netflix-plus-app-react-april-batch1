@@ -6,7 +6,7 @@ const AboutUsPage = (props) => {
   return (
     <>
       <h1>AboutUsPage</h1>
-      <p>{props.test()}</p>
+      {/* <p>{props.test()}</p> */}
 
       <h2>Demo of Mock Fragment</h2>
       <MockFragment>

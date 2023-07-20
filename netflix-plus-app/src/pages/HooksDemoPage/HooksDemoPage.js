@@ -1,13 +1,13 @@
-import React from 'react'
+import React, { Suspense } from 'react'
 import MyAccount from './MyAccount/MyAccount';
 import Blog from './Blog/Blog';
 import TodosVariant1 from './TodosVariant1/TodosVariant1';
 import TodosVariant2 from './TodosVariant2/TodosVariant2';
-import PaymentForm from './PaymentForm/PaymentForm';
+const PaymentForm = React.lazy(() => import('./PaymentForm/PaymentForm'));
 
 const HooksDemoPage = () => {
   return (
-    <>
+    <Suspense fallback={<div className="spinner-border"></div>}>
       <h1>React Hooks Demo</h1>
       <h2>MyAccount | useState Hook Demo</h2>
       <MyAccount />
@@ -23,7 +23,7 @@ const HooksDemoPage = () => {
 
       <h2>useId Hook</h2>
       <PaymentForm />
-    </>
+    </Suspense>
   );
 }
 
