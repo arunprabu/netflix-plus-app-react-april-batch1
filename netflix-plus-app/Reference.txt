@@ -26,11 +26,13 @@ Single Page App (SPA) Characteristics (7)
 ==========
 
 
- 
 Thinking in React
 ---
  0. Find out the number of components 
  1. Break UI into component hierarchy
+ 2...
+ 3... 
+
 
 Components
 --------- 
@@ -81,12 +83,12 @@ Cross Component Communication / Sharing data b/w components
   1. Parent to Child Component Communication [DONE]
       Using Props 
 
-  2. Child to Parent Component Communication [TODO]
+  2. Child to Parent Component Communication [DONE]
       Using Props with callback fn and event handler
   
   3. Any to Any Component Communication 
       3.1 Using React Context API (after 2019 -- React JS v16.8)
-      3.2 Using ReduxJS / Flux / MobX 
+      3.2 Using ReduxJS / Zustand/ Flux / MobX / Recoil 
 
 
 Concepts
@@ -489,7 +491,7 @@ Build [DONE]
   Suspense [DONE]
   
 Deployment [DONE]
-Optimizing Performance 
+Optimizing Performance [DONE]
 ...
 
 Redux 
@@ -788,3 +790,55 @@ ReactJS - Performace Tips
 Debugging in Production
 ---
 https://medium.com/@baphemot/intro-to-debugging-reactjs-applications-67cf7a50b3dd
+
+Redux 
+========
+  * Any to any component Communication
+  * State Management 
+
+
+React JS == Library 
+Redux JS == Framework 
+React-Redux == Official ReactJS, Redux Bindings (Glue)
+
+
+State Management in ReactJS 
+----
+  1. React Js + Flux JS (2015)
+      * very very complex 
+      * steps 40-50
+
+  2. ReactJS + Redux JS (2016 onwards)   === a.k.a class redux 
+      * very complex 
+      * steps 36-45
+      * additional tools: (choose anyone)
+          * redux-thunk (steps 36)
+          * redux-saga  (steps 42+)
+      * immer.js or alternatives
+  
+  3. React JS + Hooks (2019 react v16.8)
+      * no straight-forward state mgmt solutions 
+      * any to any comp commn 
+
+  4. React JS + Redux Toolkit (2020 onwards) === a.k.a modern redux (TO LEARN)
+      * super easy
+      * steps 4-6
+      * additional tools: (choose anyone)
+          * redux-thunk (default choice)
+          * redux-saga  
+
+  5. React JS + MobX 
+
+  6. React JS + Zustand 
+
+=======
+
+
+
+
+
+
+
+
+
+
