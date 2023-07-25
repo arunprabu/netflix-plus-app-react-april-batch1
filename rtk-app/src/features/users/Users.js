@@ -1,4 +1,13 @@
+import { useSelector } from "react-redux";
+
 const Users = () => {
+
+  const usersState = useSelector( (state) => { // state is the entire store data
+    console.log(state);
+    return state.users;
+  });
+  console.log(usersState);
+
   return (
     <div className="row">
       <h1>Users</h1>
