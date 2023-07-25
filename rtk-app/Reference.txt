@@ -1,0 +1,64 @@
+
+Any to Any Comp Commn
+State Management in React Apps
+
+  1. ReactJS + Flux [Not Maintained anymore]
+      * too much complexity 
+
+  2. ReactJS + Redux (2016 till today)    ==> a.k.a classic redux [LEARN SEPARATELY]
+      * complex
+      Middleware Integrations (choose anyone)
+        1. redux-thunk (38-40 steps)
+        2. redux-saga (46 steps)
+  
+  3. ReactJS + ContextAPI (Hooks)  (2019 till today) (Demo'd in prime-video-app)
+      * Easier 
+
+  4. ReactJS + Redux-Toolkit (Redux, React-Redux, Redux-thunk)   => a.k.a modern redux 
+      * Easier 
+      Middleware Integrations 
+        1. redux-thunk (by default)
+        2. redux-saga 
+
+  
+
+======
+How to create JS based react-toolkit project?
+  npx create-react-app my-app --template redux 
+
+How to create TS based react-toolkit project?
+  npx degit reduxjs/redux-templates/packages/vite-template-redux my-app
+
+
+3 Important Concepts of Redux 
+----
+  Store
+    the whole state of the app.
+  
+  Action
+    what happens in the app 
+
+  Reducer 
+    updates the store based on the action happened 
+
+  
+3 Principles of Redux 
+-----
+  1. There should be single source of truth for the whole app. i.e Store
+      (it should be an object)
+  2. The only way to update the state is by dispatching an action 
+      that tells what happened in the app 
+  3. Reducer should update the store based on action occurred 
+      and also based on previous and next state 
+
+
+createSlice({}) 
+  * needs name 
+  * initial state object 
+  * also the reducers fns  
+
+=====
+
+
+=====
+Explain CSS Modules later 

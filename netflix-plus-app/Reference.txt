@@ -808,14 +808,17 @@ State Management in ReactJS
       * very very complex 
       * steps 40-50
 
-  2. ReactJS + Redux JS (2016 onwards)   === a.k.a class redux 
+  2. ReactJS + Redux JS (2016 onwards)   === a.k.a classic redux 
       * very complex 
       * steps 36-45
       * additional tools: (choose anyone)
           * redux-thunk (steps 36)
           * redux-saga  (steps 42+)
+      * react-redux 
       * immer.js or alternatives
-  
+      * @redux-devtools/extension 
+      * redux-logger 
+
   3. React JS + Hooks (2019 react v16.8)
       * no straight-forward state mgmt solutions 
       * any to any comp commn 
@@ -826,6 +829,10 @@ State Management in ReactJS
       * additional tools: (choose anyone)
           * redux-thunk (default choice)
           * redux-saga  
+      * by default integrated tools 
+          * react-redux 
+          * immer.js 
+          * @redux-devtools/extension
 
   5. React JS + MobX 
 
@@ -833,9 +840,12 @@ State Management in ReactJS
 
 =======
 
+How to create JS Based Redux toolkit project? 
+  npx create-react-app my-app --template redux
 
 
-
+How to create TS Based Redux toolkit project?
+  npx degit reduxjs/redux-templates/packages/vite-template-redux my-app
 
 
 
