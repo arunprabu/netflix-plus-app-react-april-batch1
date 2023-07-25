@@ -2,6 +2,7 @@ import { useSelector } from "react-redux";
 
 const Users = () => {
 
+  // subscribing to the store data in the comp
   const usersState = useSelector( (state) => { // state is the entire store data
     console.log(state);
     return state.users;
