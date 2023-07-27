@@ -6,18 +6,20 @@ import Home from "./features/home/Home";
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Users from './features/users/Users';
 import Products from "./features/products/Products";
+import Cart from './features/cart/Cart';
 
 function App() {
   return (
     <BrowserRouter>
       <Header />
 
-      <main className='container'>
+      <main className="container">
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/counter" element={<Counter />} />
           <Route path="/users" element={<Users />} />
           <Route path="/products" element={<Products />} />
+          <Route path="/cart" element={<Cart />} />
         </Routes>
       </main>
 

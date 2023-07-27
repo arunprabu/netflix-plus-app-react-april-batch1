@@ -48,6 +48,7 @@ export const usersSlice = createSlice({
   initialState,
   reducers: { 
     // if you want to have sync logic you can have here
+    // to update the store locally -- you can try here
   },
   extraReducers: (builder) => {
     // if you want to have async calls handled -- setup the logic for the action suffix here
